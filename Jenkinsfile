@@ -3,7 +3,7 @@ pipeline {
     stages {
 stage('scm') {
 steps {
-    git 'https://github.com/ganeshlovesdevops/maven_demo.git'
+    git 'https://github.com/Thiruganesh/Maven_demo.git'
     }
 }
     stage('build') {
@@ -20,7 +20,7 @@ steps {
 }
     stage('deploy') {
 steps {
-    bat 'copy "C:\\Program Files (x86)\\Jenkins\\workspace\\raghupipeline\\gameoflife-web\\target\\*.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\"'
+    bat 'copy "C:\\DEVOPS\\Jenkins\\workspace\\Maven-demo-project\\gameoflife-web\\target\\gameoflife.war "C:\\DEVOPS\\apache-tomcat-9.0.33\\webapps"'
     }
 }
 }
